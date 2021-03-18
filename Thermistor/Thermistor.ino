@@ -18,6 +18,5 @@ void loop() {
   R =(Pullup * sensorValue)/(4096 - sensorValue);
   T = 1/(1/T0+(log(R)-log(R0))/B);
   Temp = T - 273.15;
-  Serial.print("Temp = ");
   Serial.println(Temp); 
 }
